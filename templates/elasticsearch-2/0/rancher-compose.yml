@@ -49,7 +49,3 @@ elasticsearch-clients:
        node.data: "false"
        node.master: "false"
        network.host: "_site_"
-kopf:
-  environment:
-    KOPF_BASIC_AUTH_LOGIN:"${kopf_user}"
-    KOPF_BASIC_AUTH_PASSWORD:"${kopf_password}"
