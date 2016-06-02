@@ -14,13 +14,13 @@
       label: "KOPF Username"
       type: "string"
       required: false
-      default: "user"
+      default: ""
     - variable: kopf_password
       description: "Password for kopf."
       label: "KOPF Password"
       type: "string"
       required: false
-      default: "password"
+      default: ""
 elasticsearch-masters:
   metadata:
     elasticsearch:
