@@ -150,7 +150,7 @@ services:
     container_name: harbor-adminserver
     restart: always
     volumes:
-#      - /data/secretkey:/etc/adminserver/key
+      - /data/secretkey:/etc/adminserver/key
       - data-database:/var/lib/mysql
       - data:/data/:z
       - data-job_logs:/var/log/jobs
@@ -221,7 +221,7 @@ services:
     container_name: harbor-jobservice
     restart: always
     volumes:
-#      - /data/secretkey:/etc/jobservice/key:z
+      - /data/secretkey:/etc/jobservice/key:z
       - data:/data/:z
       - data-job_logs:/var/log/jobs
       - data-ca_download:/etc/ui/ca/
