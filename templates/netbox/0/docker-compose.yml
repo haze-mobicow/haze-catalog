@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+    db:
+        image: postgres:9.5
+        environment:
+            - POSTGRES_USER=${DB_USER}
+            - POSTGRES_PASSWORD=${DB_PASS}
+
+    netbox:
+        image: pitkley/netbox
+        depends_on:
+            - db
+        ports:
+            - "8000:8000"
+        environment:
+            - ALLOWED_HOSTS=${ALLOWED_HOSTS}
+            - DB_HOST=db
+            - DB_NAME=netbox
+            - DB_USER=${DB_USER}
+            - DB_PASS=${DB_PASS}
+            - SECRET_KEY=${SECRET_KEY}

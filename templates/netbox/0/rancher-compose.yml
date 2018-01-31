@@ -1,0 +1,21 @@
+.catalog:
+ name: "Initial Version"
+ version: "v0.0.1"
+ questions:
+    - variable: DB_USER
+      label: "Database User"
+      default: "netbox"
+      type: string
+    - variable: DB_PASS
+      label: "Database password"
+      default: "netbox"
+      type: string
+    - variable: ALLOWED_HOSTS
+      label: "Allowed host"
+      default: "netbox.dev localhost"
+      type: string
+    - variable: SECRET_KEY
+      label: "Secret key over 50 bytes"
+      default: "KSawEsdfsfbHrVeobXCwtEiZjEkWoyoD5EdY0FAbep1PXvCoTpJjv7S9Hh"
+      type: string
+type: string

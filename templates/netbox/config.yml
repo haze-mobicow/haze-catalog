@@ -1,0 +1,7 @@
+name: NetBox
+description: "Network tool"
+version: "v0.0.1"
+category: Monitoring
+maintainer: HAZE
+projectURl: "https://github.com/haze-mobicow/docker-netbox"
+license: MIT
